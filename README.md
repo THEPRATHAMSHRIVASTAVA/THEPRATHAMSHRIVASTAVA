@@ -15,6 +15,7 @@
 ---
 
 ## 🔮 About Me
+
 <?xml version="1.0" encoding="utf-8"?>
 <svg width="760" height="48" viewBox="0 0 760 48" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="I build">
   <rect width="100%" height="100%" fill="#06060a"/>
@@ -26,7 +27,7 @@ I craft resilient, scalable data systems — primarily on **Azure** + **Databric
 
 ---
 
-## 🛠️ Tech Stack (Dark Neon)
+## 🛠️ Tech Stack 
 - **Cloud / Platform:** Azure (ADF, ADLS, Synapse, Databricks), Delta Lake, Unity Catalog  
 - **Orchestration:** Apache Airflow, Azure Data Factory (ADF)  
 - **Transformations:** PySpark, dbt, Spark SQL, Delta Lake  
