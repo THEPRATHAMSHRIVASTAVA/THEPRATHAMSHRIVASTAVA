@@ -52,6 +52,5 @@ I craft resilient, scalable data systems — primarily on **Azure** + **Databric
 ---
 
 ## 🔗 Connect
-- Email: your-email@example.com  
-- LinkedIn: https://www.linkedin.com/in/your-link  
-- Portfolio: https://your-portfolio
+- Email: your- pratham@outlook.in 
+- LinkedIn: https://www.linkedin.com/in/pratham-shrivastava-a398a9287  
