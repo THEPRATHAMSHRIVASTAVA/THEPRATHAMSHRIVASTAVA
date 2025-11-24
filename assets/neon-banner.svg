@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="1000" height="160" viewBox="0 0 1000 160" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" >
+  <defs>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <linearGradient id="g1" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#00f5ff"/>
+      <stop offset="40%" stop-color="#9d00ff"/>
+      <stop offset="100%" stop-color="#ff00aa"/>
+    </linearGradient>
+
+    <pattern id="stripe" patternUnits="userSpaceOnUse" width="8" height="8">
+      <rect width="8" height="8" fill="rgba(255,255,255,0.02)"/>
+      <path d="M-1,1 l6,-6 M1,9 l8,-8 M7,15 l6,-6" stroke="rgba(255,255,255,0.02)" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- background -->
+  <rect width="100%" height="100%" fill="#06060a"/>
+  <rect width="100%" height="100%" fill="url(#stripe)" opacity="0.08"/>
+
+  <!-- animated glow lines -->
+  <g opacity="0.35">
+    <rect x="0" y="120" width="1000" height="2" fill="#0ff" >
+      <animate attributeName="x" from="-1000" to="1000" dur="8s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="0" y="40" width="1000" height="2" fill="#ff2" >
+      <animate attributeName="x" from="1000" to="-1000" dur="10s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- main neon text -->
+  <g transform="translate(30,100)">
+    <text x="0" y="0" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif"
+          font-size="48" font-weight="700" fill="none" stroke="url(#g1)" stroke-width="1.6" letter-spacing="1">
+      <tspan filter="url(#glow)">Pratham Shrivastava</tspan>
+    </text>
+
+    <!-- inner filled glowing text with slight mask animation -->
+    <text x="0" y="0" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif"
+          font-size="48" font-weight="700" fill="url(#g1)" fill-opacity="0.95" letter-spacing="1">
+      <tspan >Pratham Shrivastava</tspan>
+    </text>
+
+    <!-- subtitle -->
+    <text x="0" y="36" font-family="Segoe UI, Roboto, Helvetica, Arial, sans-serif"
+          font-size="18" fill="#9aa0ff" opacity="0.9">Cloud Data Engineer • Azure • Databricks • Airflow • dbt • PySpark</text>
+
+    <!-- animated stroke shimmer -->
+    <rect x="0" y="-56" width="560" height="64" fill="none" stroke="white" stroke-opacity="0.03" rx="6"/>
+    <rect x="-200" y="-20" width="200" height="80" fill="white" opacity="0.04">
+      <animate attributeName="x" from="-300" to="700" dur="3s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- small neon corner accents -->
+  <g transform="translate(880,20)" opacity="0.85">
+    <circle cx="0" cy="0" r="6" fill="#00f5ff" filter="url(#glow)"/>
+    <circle cx="28" cy="0" r="4" fill="#ff00aa" filter="url(#glow)"/>
+  </g>
+</svg>
