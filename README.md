@@ -15,9 +15,12 @@
 ---
 
 ## 🔮 About Me
-<p align="center">
-  <img src="./assets/neon-typing.svg" alt="roles" />
-</p>
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="760" height="48" viewBox="0 0 760 48" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="I build">
+  <rect width="100%" height="100%" fill="#06060a"/>
+  <text x="8" y="32" font-family="Segoe UI, Roboto, Arial" font-size="18" fill="#abb2ff">I build:</text>
+  <text x="120" y="32" font-family="Segoe UI, Roboto, Arial" font-size="18" fill="#00f5ff" font-weight="700">Azure Data Pipelines • Airflow DAGs • dbt Models • PySpark Jobs</text>
+</svg>
 
 I craft resilient, scalable data systems — primarily on **Azure** + **Databricks** + **Airflow** + **dbt** + **PySpark**. I design metadata-driven ETL/ELT with production-grade CI/CD and observability.
 
